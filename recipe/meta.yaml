@@ -31,7 +31,6 @@ test:
     - pypardiso
   requires:
     - pytest
-    - pip
   files:
     - tests/test_basic_solve.py
     - tests/test_input_A.py
@@ -39,7 +38,6 @@ test:
     - tests/test_input_b.py
   commands:
     - pytest -vv tests/
-    - pip check
 
 about:
   home: https://github.com/haasad/PyPardisoProject
