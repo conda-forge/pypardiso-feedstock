@@ -1,5 +1,5 @@
 {% set name = "pypardiso" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 91a9df26639c5822e2aa796ac382df0603872045558369dc1ce69ec6debedcd3
+  sha256: 87f5ae6769ae8cb9a71952893a78462c2a5557778bafb4deb0f0ac9d5bd0da17
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -44,7 +44,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'Python interface to the Intel MKL Pardiso library to solve large sparse linear systems of equations'
+  summary: Python interface to the Intel MKL Pardiso library to solve large sparse linear systems of equations
 
 extra:
   recipe-maintainers:
