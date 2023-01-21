@@ -10,7 +10,7 @@ source:
   sha256: 87f5ae6769ae8cb9a71952893a78462c2a5557778bafb4deb0f0ac9d5bd0da17
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -22,7 +22,6 @@ requirements:
   run:
     - python >=3.6
     - numpy
-    - libblas * *mkl
     - scipy
     - mkl
 
