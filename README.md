@@ -1,11 +1,11 @@
-About pypardiso
-===============
+About pypardiso-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pypardiso-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/haasad/PyPardisoProject
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pypardiso-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python interface to the Intel MKL Pardiso library to solve large sparse linear systems of equations
 
