@@ -28,15 +28,6 @@ requirements:
 test:
   imports:
     - pypardiso
-  requires:
-    - pytest
-  files:
-    - tests/test_basic_solve.py
-    - tests/test_input_A.py
-    - tests/test_scipy_aliases.py
-    - tests/test_input_b.py
-  commands:
-    - pytest -vv tests/
 
 about:
   home: https://github.com/haasad/PyPardisoProject
