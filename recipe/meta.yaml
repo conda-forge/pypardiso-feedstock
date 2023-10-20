@@ -1,5 +1,5 @@
 {% set name = "pypardiso" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 87f5ae6769ae8cb9a71952893a78462c2a5557778bafb4deb0f0ac9d5bd0da17
+  sha256: 8eeafbda5fbf104162da2292fa69c190beee244acf3c95cdb6aac0edb3382bd1
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
