@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - mkl !=2024.0
+    - mkl <2024
     - numpy
     - scipy
 
