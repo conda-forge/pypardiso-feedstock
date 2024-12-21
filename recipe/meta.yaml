@@ -6,27 +6,29 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: ff13eff486a2246d9c5bc9cec9f5bc8009f1b8831b2d10767787d768d98afa06
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
     - setuptools-scm  # https://conda-forge.org/docs/maintainer/knowledge_base.html#using-setuptools-scm
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - mkl <2024
     - numpy
     - scipy
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pypardiso
 
