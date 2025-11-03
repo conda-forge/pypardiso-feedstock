@@ -1,5 +1,5 @@
 {% set name = "pypardiso" %}
-{% set version = "0.4.6" %}
+{% set version = "0.4.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ff13eff486a2246d9c5bc9cec9f5bc8009f1b8831b2d10767787d768d98afa06
+  sha256: 0f307c749ace576d9de5c63ce39af0e850d8f772697260454f3deb0202a7a92d
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - mkl <2024
+    - mkl !=2024.0
     - numpy
     - scipy
 
